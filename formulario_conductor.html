@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="contenedor-principal">
+            <div class="ubicacion_memb">
+                <p>T</p>
+                <p>E</p>
+                <p>L</p>
+                <p>E</p>
+                <p>-</p>
+                <p>T</p>
+                <p>A</p>
+                <p>X</p>
+                <p>I</p>
+            </div>
+            
+            <div id="id">
+                <form action="respuesta.html" method="get" name="cositas">
+                    <div class="fondito">
+
+                        <fieldset>
+                            <legend>Evaluación del conductor</legend>
+                            <label for="opciones">¿Cómo calificarías la puntualidad del conductor?</label>
+                            <select id="opciones" name="opciones" required>
+                                <option value="" disabled selected>Seleccionar respuesta</option>
+                                <optgroup label="⭐​⭐​⭐​⭐⭐">
+                                <option value="5 estrellas">Excelente​</option>
+                                </optgroup>
+                                <optgroup label="⭐​⭐​⭐​⭐">
+                                <option value="4 estrellas">Buena​</option>
+                                </optgroup>
+                                <optgroup label="⭐​⭐​⭐">
+                                <option value="3 estrellas">Regular​</option>
+                                </optgroup>
+                                <optgroup label="⭐​⭐">
+                                <option value="2 estrellas">Mala​</option>
+                                </optgroup>
+                                <optgroup label="⭐">
+                                <option value="1 estrellas">Muy mala​</option>
+                                </optgroup>
+                            </select><br>
+                            <p id="uwu"></p>
+                            <label for="respetuoso">¿El conductor fue cortés y respetuoso?</label>
+                            <select name="opciones2" id="respetuoso" required>
+                                <option value="" disabled selected>Seleccionar respuesta</option>
+                                <option value="si">Sí</option>
+                                <option value="no">No</option>
+                            </select><br>
+                            <p id="uwu"></p>
+                            <label for="seguridad">¿Te sentiste seguro durante el trayecto?</label>
+                            <select name="opciones3" id="seguridad" required>
+                            <option value="" disabled selected>Seleccionar respuesta</option>
+                            <option value="Muy seguro">Muy seguro</option>
+                            <option value="seguro">seguro</option>
+                            <option value="inseguro">inseguro</option>
+                            <option value="muy inseguro">muy inseguro</option>
+                            </select><br>
+                            <p id="uwu"></p>
+                            <label for="actitud">¿Cómo describirías la actitud del conductor?</label>
+                            <select name="opciones4" id="actitud" required>
+                            <option value="" disabled selected>Seleccionar respuesta</option>
+                            <option value="Muy amable">Muy amable</option>
+                            <option value="amable">amable</option>
+                            <option value="Neutral">Neutral</option>
+                            <option value="Desagradable">Desagradable</option>
+                            </select><br>
+                            <p id="uwu"></p>
+                            <label for="ruta">¿El conductor conocía bien la ruta?</label>
+                            <select name="opciones5" id="ruta" required>
+                            <option value="" disabled selected>Seleccionar respuesta</option>
+                            <option value="Muy bien">Muy bien</option>
+                            <option value="Bien">Bien</option>
+                            <option value=" Regular"> Regular</option>
+                            <option value="Dependía mucho del GPS">Dependía mucho del GPS</option>
+                            </select><br>
+                            <p id="uwu"></p> 
+                            <label for="ruta">¿El conductor respeto las señales y normas de trafico?</label>
+                            <select name="opciones5" id="ruta" required>
+                            <option value="" disabled selected>Seleccionar respuesta</option>
+                            <option value="Siempre">Siempre</option>
+                            <option value="Casi siempre">Casi siempre</option>
+                            <option value="Algunas veces">Algunas veces</option>
+                            <option value="Nunca">Nunca</option>
+                            </select><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Comentarios adicionales</legend>
+                            <label for="comentario">Comentarios:</label>
+                            <textarea name="comentario" id="comentario" rows="4" cols="50" placeholder="Ingresa tus comentarios acá"></textarea><br>
+                            <p id="uwu"></p>
+                            <label for="extra">¿Si pudieras recomendar a este conductor, lo harías?</label>
+
+                            <input list="extras" id="extra" name="extra" placeholder="Por favor seleccione una respuesta" required>
+                            
+                            <datalist id="extras">
+                                <option value="Sí">
+                                <option value="No">
+                            </datalist>
+                            <progress  value="70" max="100"></progress>
+                            
+                            <label for="rangeInput">Ajusta el valor (0-100):</label><br>
+                            <meter type="range" id="rangeInput" min="0" max="100" value="70"></meter>
+                            
+                            
+                    
+                        </fieldset>
+
+                        <div id="botonera">
+                            <a href="index.html">
+                                <button type="button" id="id2">Cancelar</button>
+                            </a>
+                            <input type="submit" name="aceptar" value="Aceptar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="ubicacion_memb">
+                <p>T</p>
+                <p>E</p>
+                <p>L</p>
+                <p>E</p>
+                <p>-</p>
+                <p>T</p>
+                <p>A</p>
+                <p>X</p>
+                <p>I</p>
+            </div>
+        </div>
+    </body>
+</html>

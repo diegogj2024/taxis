@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos3.css">
+</head>
+<body id="fondo">
+    <div id="fondo2">
+        <div class="título">
+            <div>TELE-TAXI</div>
+            <hr>
+        </div>
+        <div class="título2">Encuesta de Satisfacción</div>
+        <form class="color" action="respuesta.html" method="get">
+            <div class="pregunta">
+                <label for="Pregunta1">1. ¿Cómo calificarías tu experiencia general con nuestro servicio de tele-taxi?</label>
+                <select id="Pregunta1" name="Pregunta1">
+                    <option value="">Selecciona una opción</option>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Bueno">Bueno</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Malo">Malo</option>
+                    <option value="Muy malo">Muy malo</option>
+                </select>
+            </div>
+
+            <div class="pregunta">
+                <label for="Pregunta2">2. ¿Qué tan puntual fue el taxi en llegar al destino deseado?</label>
+                <select id="Pregunta2" name="Pregunta2">
+                    <option value="">Selecciona una opción</option>
+                    <option value="Muy puntual">Muy puntual</option>
+                    <option value="Puntual">Puntual</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Lento">Lento</option>
+                    <option value="Muy Lento">Muy Lento</option>
+                </select>
+            </div>
+
+            <div class="pregunta">
+                <label for="Pregunta3">3. ¿Cómo calificas la atención al cliente del conductor?</label>
+                <select id="Pregunta3" name="Pregunta3">
+                    <option value="">Selecciona una opción</option>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                    <option value="Muy mala">Muy mala</option>
+                </select>
+            </div>
+
+            <div class="pregunta">
+                <label for="Pregunta4">4. ¿Crees que el taxi cumple con las medidas de seguridad adecuadas?</label>
+                <select id="Pregunta4" name="Pregunta4">
+                    <option value="">Selecciona una opción</option>
+                    <option value="Definitivamente sí">Definitivamente sí</option>
+                    <option value="Probablemente sí">Probablemente sí</option>
+                    <option value="No estoy seguro">No estoy seguro</option>
+                    <option value="Probablemente no">Probablemente no</option>
+                    <option value="Definitivamente no">Definitivamente no</option>
+                </select>
+            </div>
+
+            <div class="pregunta">
+                <label for="Pregunta5">5. ¿Cómo fue tu experiencia de limpieza del taxi?</label>
+                <select id="Pregunta5" name="Pregunta5">
+                    <option value="">Selecciona una opción</option>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                    <option value="Muy mala">Muy mala</option>
+                </select>
+            </div>
+
+            <div class="movimiento">
+                <label for="range1">Puntualidad:</label>
+                <input type="range" id="range1">
+            </div>    
+
+            <div class="movimiento">
+                <label for="range2">Accesibilidad:</label>
+                <input type="range" id="range2">
+            </div>
+                
+            <div class="movimiento">
+                <label for="range3">Comodidad:</label>
+                <input type="range" id="range3">
+            </div>    
+                
+            <div class="movimiento">
+                <label for="range4">Servicio al cliente:</label>
+                <input type="range" id="range4">
+            </div>    
+                    
+            <div class="movimiento">
+                <label for="range5">Mantenimiento:</label>
+                <input type="range" id="range5">
+            </div>
+
+            <div class="opinion">
+                <label for="mensaje"></label>
+                <textarea id="mensaje" rows="5" cols="60" placeholder="Escribe tu opinion aquí..."></textarea>
+            </div>
+
+            <div class="boton">
+                <a href="registro_formulario.html">
+                <button>Regresar</button>
+                </a>
+                <button type="submit">Confirmar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

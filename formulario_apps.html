@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles1.css">
+    </head>
+    <body id="fondo">
+        <div class="fondo_app">
+            <div class="descripcion">
+                <div>Estamos recolectando información sobre nuestra App, por favor responde las preguntas y haznos saber tú opinión</div>
+            </div>
+            <br>
+            <form action="respuesta.html" method="get">
+                <div class="espacio">
+                    <label for="uno">¿Qué le parece la App?</label>
+                    <select id="uno" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Muy bueno">Muy bueno</option>
+                        <option value="Bueno">Bueno</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Malo">Malo</option>
+                        <option value="Muy malo">Muy malo</option>
+                    </select>
+                </div>
+                <div class="espacio">
+                    <label for="dos">¿Es fácil de usar la aplicación?</label>
+                    <select id="dos" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="espacio">
+                    <label for="tres">¿Presentó algún incoveniente? Dejanos saber si tuvistes alguno</label>
+                    <input id="tres" placeholder="Escribe tu incoveniente" type="text" required>
+                </div>
+                <div class="espacio">
+                    <label for="cuatro">¿Si tuvieras que calificar la App, que puntaje del 1 al 5 le darías?</label>
+                    <select required>
+                        <option disabled selected>Seleccione calificación</option>
+                        <option id="cuatro">⭐️</option>
+                        <option id="cuatro">⭐️⭐️</option>
+                        <option id="cuatro">⭐️⭐️⭐️</option>
+                        <option id="cuatro">⭐️⭐️⭐️⭐️</option>
+                        <option id="cuatro">⭐️⭐️⭐️⭐️⭐️</option>
+                    </select>
+                </div>
+                <div class="espacio">
+                    <label for="cinco">¿Qué modificarias de la App a tu gusto?</label>
+                    <input id="cinco" placeholder="Escribe tu respuesta" type="text" required>
+                </div>
+                <div class="espacio">
+                    <label for="pregun">¿Recomendarías la aplicación?</label>
+                    <select required>
+                        <option disabled selected>Seleccione su respuesta</option>
+                        <option>Si</option>
+                        <option>No</option>
+                        <input name="no" type="text" placeholder="Escribe tu motivo">
+                    </select>
+                </div>
+            <div id="espacio">
+                <label for="mensaje"></label>
+                <textarea id="mensaje" rows="5" cols="60" placeholder="Escribe tu opinion sobre la App, nos ayudará a mejorar..." required></textarea>
+            </div>
+
+            <div class="butonapp">
+                <a href="registro_formulario.html">
+                    <button type="button" id="butonapp">Cancelar</button>
+                </a>
+                <button type="submit" id="butonapp">Aceptar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
