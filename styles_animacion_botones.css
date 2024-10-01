@@ -1,22 +1,70 @@
-#BotonNavidad{
-    width: 200px;
-    height: 200px;
-    background-image: url(navidad.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 100% 100% 100% 100%;
+    #BotonNavidad{
+        width: 200px;
+        height: 200px;
+        background-image: url(imagenes/navidad.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        border-radius: 100% 100% 100% 100%;
+        
+    }
+    #BotonNavidad:hover{
+        animation: rotate 7s linear infinite;
+    }
+    #BotonHallowen{
+        width: 200px;
+        height: 200px;
+        background-image: url(imagenes/hallowen.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        border-radius: 100% 100% 100% 100%;
+        
+    }
+    #BotonHallowen:hover{
+        animation: rotate 7s linear infinite;
+    }
+    #BotonAñonuevo{
+        width: 200px;
+        height: 200px;
+        background-image: url(https://i.pinimg.com/564x/d0/7c/b6/d07cb661995c75aa485c752fe7236d3d.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        border-radius: 100% 100% 100% 100%;
+        
+    }
+    #BotonAñonuevo:hover{
+        animation: rotate 7s linear infinite;
+    }
+    #piepagina {
+        justify-content: center;
+        display: flex;
+        gap: 50px;
+        padding: 20px;
+        position: relative;
+    }
+    .boton-container {
+        position: relative;
+        text-align: center;
+    }
     
-}
-#BotonNavidad:hover{
-    animation: rotate 7s linear infinite;
-}
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-       
+    .label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 18px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
-    to {
-        transform: rotate(360deg);
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
-}
