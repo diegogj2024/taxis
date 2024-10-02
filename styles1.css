@@ -130,6 +130,30 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/**animacion_navidad**/
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(82, 134, 248, 1);
+    animation: fondo 3s linear infinite;
+}
+@keyframes fondo{
+    0%{
+        background-color: rgba(82, 134, 248, 1);
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: green;
+    }
+}
+
 .animar{
     width: 100px;
     height: 100px;
@@ -138,19 +162,25 @@
 }
 
 .img{
-    width: 300px;
-    height: 300px;
-    transition: transform 10s ease 0.5s;
+    width: 500px;
+    height: 500px;
+    background-image: url(https://www.muylinux.com/wp-content/uploads/2023/12/navidad.webp);
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    transition: transform 10s ease 0.5s, background-image 10s linear;
 }
 .img:hover{
     transform: rotate(360deg);
-    opacity: 30%;
+    background-image: url(https://img.freepik.com/vector-gratis/letras-feliz-navidad-adornos_23-2148330812.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1727740800&semt=ais_hybrid);
 }
 #opacidad{
     animation: animado 5s infinite;
 }
 .snow{
-    position: relative;
+    position: relative; bottom: 200px;
+    width: 200%;
+    display: flex;
+    flex-direction: row;
 }
 .nieve{
     position: absolute;
@@ -166,7 +196,7 @@
         top: -10%;
     }
     100% {
-        transform: translateX(calc(-50% + (random() * 100vw))) translateY(100vh);
+        transform: translateX(0);
         top: 100vh;
     }
 }
@@ -221,3 +251,4 @@
     align-items: center;
     width: 50px;
 }
+
