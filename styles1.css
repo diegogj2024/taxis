@@ -143,6 +143,81 @@
     transition: transform 10s ease 0.5s;
 }
 .img:hover{
-    transform: skewX(60deg);
+    transform: rotate(360deg);
     opacity: 30%;
+}
+#opacidad{
+    animation: animado 5s infinite;
+}
+.snow{
+    position: relative;
+}
+.nieve{
+    position: absolute;
+    color: lightblue;
+    font-size: 100px;
+    opacity: 0.8;
+    animation: copos linear infinite;
+    top: -10%;
+}
+@keyframes copos{
+    0% {
+        transform: translateX(0);
+        top: -10%;
+    }
+    100% {
+        transform: translateX(calc(-50% + (random() * 100vw))) translateY(100vh);
+        top: 100vh;
+    }
+}
+.nieve:nth-child(1) { left: 10%; animation-duration: 5s; animation-delay: 0s; }
+.nieve:nth-child(2) { left: 20%; animation-duration: 6s; animation-delay: 1s; }
+.nieve:nth-child(3) { left: 30%; animation-duration: 4s; animation-delay: 2s; }
+.nieve:nth-child(4) { left: 40%; animation-duration: 7s; animation-delay: 3s; }
+.nieve:nth-child(5) { left: 50%; animation-duration: 5s; animation-delay: 4s; }
+.nieve:nth-child(6) { left: 60%; animation-duration: 6s; animation-delay: 5s; }
+.nieve:nth-child(7) { left: 70%; animation-duration: 4s; animation-delay: 6s; }
+.nieve:nth-child(8) { left: 80%; animation-duration: 7s; animation-delay: 7s; }
+
+@keyframes animado{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.animacion_navidad{
+    background-color: rgba(188, 179, 179, 0.43);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+#id{
+    background-color: rgba(82, 134, 248, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenedor_navidad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.ubicacion_memb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
 }
