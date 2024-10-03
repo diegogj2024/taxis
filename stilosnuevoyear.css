@@ -19,7 +19,6 @@ body {
 
 
 #id {
-    background-color: rgba(82, 134, 248, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,7 +175,70 @@ progress{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 800px;
+    width: 600px;
     height: 500px;
     border-radius: 10px;
+    position: relative;left: 100px;
+}
+
+.polvora{
+    background-image: url(imagenes/polvora.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: relative;right: 900px;
+    bottom: 180px;
+    opacity: 100%;
+    transition: opacity 2s linear;
+}
+
+.polvora:hover{
+    opacity: 100%;
+    animation: polvoraa 3s forwards;
+}
+
+.polvora2{
+    background-image: url(imagenes/polvora.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: relative;right: 980px;
+    top: 250px;
+    opacity: 100%;
+    transition: opacity 2s linear;
+}
+
+.polvora2:hover{
+    opacity: 100%;
+    animation: polvoraa 3s forwards;
+}
+.polvora3{
+    background-image: url(imagenes/polvora.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: relative;right: 1000px;
+    bottom: 170px;
+    opacity: 100%;
+    transition: opacity 2s linear;
+}
+
+.polvora3:hover{
+    opacity: 100%;
+    animation: polvoraa 3s forwards;
+}
+
+@keyframes polvoraa{
+    0%{
+        background-image: url(imagenes/polvora.png);
+        transition: background-image 4s linear , transform 4s linear;
+    }
+
+    100%{
+        background-image: url(imagenes/icono.png);
+        transform: scale(2.0);
+    }
 }
