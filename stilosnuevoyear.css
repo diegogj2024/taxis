@@ -175,7 +175,7 @@ progress{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 600px;
+    width: 900px;
     height: 500px;
     border-radius: 10px;
     position: relative;left: 100px;
@@ -188,14 +188,14 @@ progress{
     width: 100px;
     height: 100px;
     position: relative;right: 900px;
-    bottom: 180px;
-    opacity: 100%;
+    bottom: 100px;
+    opacity: 0;
     transition: opacity 2s linear;
 }
 
 .polvora:hover{
     opacity: 100%;
-    animation: polvoraa 3s forwards;
+    animation: polvoraa 2s forwards;
 }
 
 .polvora2{
@@ -205,14 +205,14 @@ progress{
     width: 100px;
     height: 100px;
     position: relative;right: 980px;
-    top: 250px;
-    opacity: 100%;
+    top: 300px;
+    opacity: 0;
     transition: opacity 2s linear;
 }
 
 .polvora2:hover{
     opacity: 100%;
-    animation: polvoraa 3s forwards;
+    animation: polvoraa 2s forwards;
 }
 .polvora3{
     background-image: url(imagenes/polvora.png);
@@ -221,14 +221,53 @@ progress{
     width: 100px;
     height: 100px;
     position: relative;right: 1000px;
-    bottom: 170px;
-    opacity: 100%;
+    bottom: 80px;
+    opacity: 0;
     transition: opacity 2s linear;
 }
 
 .polvora3:hover{
     opacity: 100%;
-    animation: polvoraa 3s forwards;
+    animation: polvoraa 2s forwards;
+}
+
+.polvora4{
+    background-image: url(imagenes/polvora.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: relative;right: 800px;
+    bottom: 250px;
+    opacity: 0;
+    transition: opacity 2s linear;
+}
+
+.polvora4:hover{
+    opacity: 100%;
+    animation: polvoraa 2s forwards;
+}
+
+.polvora5{
+    background-image: url(imagenes/polvora.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: relative;right: 850px;
+    bottom: 100px;
+    opacity: 0;
+    transition: opacity 2s linear;
+}
+
+.polvora5:hover{
+    opacity: 100%;
+    animation: polvoraa 2s forwards;
+}
+
+
+#moverpolvora{
+    position:relative;left: 900px;
 }
 
 @keyframes polvoraa{
