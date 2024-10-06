@@ -281,3 +281,60 @@ progress{
         transform: scale(2.0);
     }
 }
+p[id="añonuevo"]{
+    font-size: 30px;
+    width: 700px;
+    position: relative;bottom: 30px;
+    animation:frase  5s linear infinite;
+}
+
+@keyframes frase{
+    0%{
+        color: red;
+    }
+
+    50%{
+        color: gold;
+    }
+
+    100%{
+        color: green;
+    }
+}
+#fila-fuegos {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+.cositos {
+    animation: moverFilaBajar 5s linear infinite;
+}
+
+/* Animación: primero se mueve horizontalmente, luego baja */
+@keyframes moverFilaBajar {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(500px) translateY(0);
+    }
+    100% {
+        transform: translateX(500px) translateY(20px) rotate(90deg); /* Al llegar al final, baja */
+    }
+}
+
+
+#cositos1 {
+    animation-delay: 0s;
+}
+#cositos2 {
+    animation-delay: 1.25s;
+}
+#cositos3 {
+    animation-delay: 2.5s;
+}
+#cositos4 {
+    animation-delay: 3.75s;
+}
