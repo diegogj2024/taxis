@@ -5,7 +5,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgba(82, 134, 248, 1);
+    animation: colores  20s  ease forwards;
+}
+
+@keyframes colores{
+    0%{
+        background-image:url(imagenes/azulito.jpg);
+    }
+    100%{
+        background-image: url(imagenes/2025año.gif);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+    }
 }
 
 
@@ -169,7 +180,6 @@ progress{
     background-color: red;
 }
 .animacion_newyear{
-    background-color: rgba(188, 179, 179, 0.43);
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -312,7 +322,6 @@ p[id="añonuevo"]{
     animation: moverFilaBajar 5s linear infinite;
 }
 
-/* Animación: primero se mueve horizontalmente, luego baja */
 @keyframes moverFilaBajar {
     0% {
         transform: translateX(0) translateY(0);
@@ -321,7 +330,7 @@ p[id="añonuevo"]{
         transform: translateX(500px) translateY(0);
     }
     100% {
-        transform: translateX(500px) translateY(20px) rotate(90deg); /* Al llegar al final, baja */
+        transform: translateX(500px) translateY(20px) rotate(90deg);
     }
 }
 
@@ -337,4 +346,15 @@ p[id="añonuevo"]{
 }
 #cositos4 {
     animation-delay: 3.75s;
+}
+
+.animacion_fotos{
+    background-image:url(imagenes/new_year.jpg);
+    animation: imagenes 10s linear infinite;
+}
+
+@keyframes imagenes{
+    0%{
+        background-image: url();
+    }
 }
