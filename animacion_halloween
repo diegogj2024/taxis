@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onclick="Playaudio()">
+    <audio id="musicafondo" autoplay loop="infinite">
+        <source src="musica/hallowen.mp3" type="audio/mp3">
+        tu navegador no es compatible
+    </audio>
+    <div id="contenedor-principal">
+        <div class="calavera">💀</div>
+        <div class="calavera">💀</div>
+        <div class="calavera">💀</div>
+        <div class="calavera">💀</div>
+        <div class="calavera">💀</div>
+        <div class="calavera">💀</div>
+        <div class="calavera">💀</div>
+        <div class="calavera">💀</div>
+        <div class="calavera">💀</div>
+        <div class="calavera">💀</div>
+
+        <div class="textito">
+            <p>T</p>
+            <p>E</p>
+            <p>L</p>
+            <p>E</p>
+            <p>-</p>
+            <p>T</p>
+            <p>A</p>
+            <p>X</p>
+            <p>I</p>
+        </div>
+        
+        <div id="id">
+            <div class="animacion_hawolen">
+                <img src="titulo.png" class="titulo">
+                <img src="https://media.baamboozle.com/uploads/images/125978/1635151524_148829_gif-url.gif" class="gif">
+                <img src="https://media.baamboozle.com/uploads/images/125978/1635151524_148829_gif-url.gif" class="gif2">
+                <img src="https://media.baamboozle.com/uploads/images/125978/1635151524_148829_gif-url.gif" class="gif3">
+                <img src="https://media.baamboozle.com/uploads/images/125978/1635151524_148829_gif-url.gif" class="gif4">
+                <img src="fantasmita.png" class="gif5">
+                <img src="fantasmita.png" class="gif6">
+                <img src="fantasmita.png" class="gif7">
+                <img src="fantasmita.png" class="gif8">
+                <img src="calabaza.png" class="gif9">
+                <img src="calabaza.png" class="gif10">
+                <img src="calabaza.png" class="gif11">
+                <img src="finalito.gif" class="final">
+                <img src="finalito.gif" class="final2">
+            </div>
+        </div>
+
+        <div class="textito">
+            <p>T</p>
+            <p>E</p>
+            <p>L</p>
+            <p>E</p>
+            <p>-</p>
+            <p>T</p>
+            <p>A</p>
+            <p>X</p>
+            <p>I</p>
+        </div>
+    </div>
+    <script>
+        function Playaudio(){
+            document.getElementById("musicafondo").play();
+        }
+    </script>
+</body>
+</html>
