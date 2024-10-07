@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles5.css">
 </head>
 <body onclick="Playaudio()">
     <audio id="musicafondo" autoplay loop="infinite">
