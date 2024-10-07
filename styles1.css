@@ -3,7 +3,7 @@
     padding: 7%;
     margin: 10px;            
 }
-
+        
 .texto{
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -13,7 +13,6 @@
     background-color: rgba(188, 179, 179, 0.43);
     color: yellow;
 }
-
 .boton{
     background-color: blue;
     color: yellow;
@@ -22,7 +21,6 @@
     display: flex;
     justify-content: center;
 }
-
 .boton:hover{
     background-color: rgb(164, 15, 164);
 }
@@ -114,7 +112,7 @@
    color: black;
 }
 
-/***registro_formulario/formulario_app***/
+/***formulario_apps***/
 
 .fondo_apps{
     background-color: rgba(188, 179, 179, 0.43);
@@ -132,51 +130,199 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.boton_app{
-    background-color: blue;
-    color: yellow;
-    padding: 20%;
-    margin: 2px;
+/**animacion_navidad**/
+
+body{
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    border-radius: 5px;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(82, 134, 248, 1);
+    animation: fondo 10s linear infinite;
+}
+@keyframes fondo{
+    0%{
+        background-color: rgba(82, 134, 248, 1);
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: green;
+    }
 }
 
-.boton_app:hover{
-    background-color: purple;
+.arbolito{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 10px;
+    width: 750px;
+    font-size: 70px;
+    animation: animado 7s infinite;
+}
+#arbolito2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: left;
+    margin: 10px;
+    width: 750px;
+    padding-left: 110%;
+    font-size: 70px;
+    animation: animado 7s infinite;
+}
+.img{
+    width: 500px;
+    height: 500px;
+    background-image: url(https://www.muylinux.com/wp-content/uploads/2023/12/navidad.webp);
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    border-radius: 4%;
+    transition: transform 2s, background-image 2s linear infinite;
+    animation: cambioimg 10s linear infinite;
+}
+.img:hover{
+    opacity: 1;
+    background-image: url(https://img.freepik.com/vector-gratis/letras-feliz-navidad-adornos_23-2148330812.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1727740800&semt=ais_hybrid);
+}
+@keyframes cambioimg{
+    20%{
+        opacity: 1;
+        background-image: url(https://www.muylinux.com/wp-content/uploads/2023/12/navidad.webp);
+    }
+    100%{
+        opacity: 1;
+        background-image: url(https://img.freepik.com/vector-gratis/letras-feliz-navidad-adornos_23-2148330812.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1727740800&semt=ais_hybrid);
+    }
+}
+#opacidad{
+    animation: animado 5s infinite;
 }
 
-.descripcion{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: purple;
-    font-size: 30px;
-    text-align: center;
-    background: linear-gradient(90deg, rgb(0, 255, 191), rgb(0, 255, 225)); 
+#titulo_navidad{
+    color: yellow;
+    font-size: 20px;
+    padding-right: 20%;
 }
-
-.fondo_app{
-    background-color: lightseagreen;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid rebeccapurple;
-    margin: 20px;
+.texto_navidad{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    animation: textitonavidad 3s linear infinite;
+}
+.texto_navidad:hover{
+    transform: translateX(10);
+}
+@keyframes textitonavidad{
+    0%{
+        opacity: 0;
+        color: greenyellow;
+    }
+    20%{
+        opacity: 1;
+        color: aqua;
+    }
+    40%{
+        opacity: 2;
+        color: lightcoral;
+    }
+    60%{
+        opacity: 3;
+        color: gold;
+    }
+    80%{
+        opacity: 1;
+        color: blue;
+    }
+    100%{
+        opacity: 0;
+        color: white;
+    }
+}
+.snow{
+    position: relative; bottom: 200px;
+    width: 200%;
+    display: flex;
+    flex-direction: row;
+}
+.nieve{
+    position: absolute;
+    color: lightblue;
+    font-size: 100px;
+    opacity: 0.8;
+    animation: copos linear infinite;
+    top: -10%;
+}
+@keyframes copos{
+    0% {
+        transform: translateX(0);
+        top: -10%;
+    }
+    100% {
+        transform: translateX(0);
+        top: 100vh;
+    }
+}
+.nieve:nth-child(1) { left: 10%; animation-duration: 5s; animation-delay: 0s; }
+.nieve:nth-child(2) { left: 20%; animation-duration: 6s; animation-delay: 1s; }
+.nieve:nth-child(3) { left: 30%; animation-duration: 4s; animation-delay: 2s; }
+.nieve:nth-child(4) { left: 40%; animation-duration: 7s; animation-delay: 3s; }
+.nieve:nth-child(5) { left: 50%; animation-duration: 5s; animation-delay: 4s; }
+.nieve:nth-child(6) { left: 60%; animation-duration: 6s; animation-delay: 5s; }
+.nieve:nth-child(7) { left: 70%; animation-duration: 4s; animation-delay: 6s; }
+.nieve:nth-child(8) { left: 80%; animation-duration: 7s; animation-delay: 7s; }
+
+@keyframes animado{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.contenedor_navidad{
+    background-color: transparent;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+}
+#id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenedor_navideño{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.ubicacion_memb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
 }
 
-.espacio{
-    margin-bottom: 30px;
-}
-#espacio2{
-    margin-bottom: 60px;
-}
-
-.butonapp button{
-    background-color: #00fff0;
-    margin: 30px;
-    height: 30px;
-    width: 80px;
-    border-radius: 10px;
-}
-#butonapp:hover{
-    background-color: lightskyblue;
+@keyframes mover {
+    0%{
+        opacity: 0;
+        transform: translate(-100%, 100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(100, 100);
+    }
 }
