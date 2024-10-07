@@ -1,0 +1,75 @@
+    #BotonNavidad{
+        width: 200px;
+        height: 200px;
+        background-image: url(imagenes/navidad.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        border-radius: 100% 100% 100% 100%;
+        transition:background-image 5s linear;
+        
+    }
+    #BotonNavidad:hover{
+        background-image:url(imagenes/navidad2.jpg);
+        animation: rotate 7s linear infinite;
+    }
+    #BotonHallowen{
+        width: 200px;
+        height: 200px;
+        background-image: url(imagenes/hallowen.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        border-radius: 100% 100% 100% 100%;
+        transition:background-image 5s linear;
+        
+    }
+    #BotonHallowen:hover{
+        background-image: url(imagenes/hallowen2.jpg);
+        animation: rotate 7s linear infinite;
+    }
+    #BotonAñonuevo{
+        width: 200px;
+        height: 200px;
+        background-image: url(imagenes/anonuevo.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        border-radius: 100% 100% 100% 100%;
+        transition:background-image 5s linear;
+    }
+    #BotonAñonuevo:hover{
+        background-image: url(imagenes/anonuevo2.jpg);
+        animation: rotate 7s linear infinite;
+    }
+    #piepagina {
+        justify-content: center;
+        display: flex;
+        gap: 50px;
+        padding: 20px;
+        position: relative;
+    }
+    .boton-container {
+        position: relative;
+        text-align: center;
+    }
+    
+    .label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 18px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }

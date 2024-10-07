@@ -169,3 +169,14 @@ progress{
     height: 10px;
     background-color: red;
 }
+.animacion_hawolen{
+    background-color: rgba(188, 179, 179, 0.43);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
