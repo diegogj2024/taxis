@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    border: solid 10px purple;
+}
+
+#contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    position: relative; 
+}
+
+.animacion_hawolen {
+    background-color: #ff00f2;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.textito {
+    color: white;
+}
+
+.calavera {
+    position: absolute;
+    font-size: 60px;
+    animation: girar 5s infinite linear, descender 8s forwards; 
+    display: inline-block;
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+@keyframes descender {
+    0% {
+        top: -50%; 
+    }
+    100% {
+        top: 100; 
+    }
+}
+
+
+.calavera:nth-of-type(1) { top: 5%; left: -3%; }
+.calavera:nth-of-type(2) { top: 15%; left: 6%; }
+.calavera:nth-of-type(3) { top: 25%; left: -1%; }
+.calavera:nth-of-type(4) { top: 35%; left: 7%; }
+.calavera:nth-of-type(5) { top: 45%; left: -2%; }
+.calavera:nth-of-type(6) { top: 50%; right: 5%; }
+.calavera:nth-of-type(7) { top: 60%; right: -3%; }
+.calavera:nth-of-type(8) { top: 70%; right: 4%; }
+.calavera:nth-of-type(9) { top: 80%; right: -4%; }
+.calavera:nth-of-type(10) { top: 85%; right: 6%; }
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.calavera:hover {
+    transform: scale(1.2) rotate(360deg); 
+}
+
+.titulo {
+    animation: moverTitulo 2s infinite alternate; 
+}
+
+@keyframes moverTitulo {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(5); 
+    }
+}
+
+.gif {
+    width: 220px; 
+    height: auto; 
+    position: absolute; 
+    top: 10px;
+    right: 170px; 
+}
+
+.gif2 {
+    width: 220px; 
+    height: auto; 
+    position: absolute;
+    top: 340px; 
+    right: 170px; 
+    transform: rotate(435deg); 
+}
+
+.gif3 {
+    width: 220px;
+    height: auto; 
+    position: absolute; 
+    top: 365px;
+    left: 170px;
+    transform: rotate(180deg); 
+}
+
+.gif4 {
+    width: 220px; 
+    height: auto; 
+    position: absolute; 
+    top: 25px;
+    left: 180px; 
+    transform: rotate(255deg); 
+}
+
+@keyframes moverfantasma {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, 10px);
+    }
+    50% {
+        transform: translate(-10px, -10px);
+    }
+    75% {
+        transform: translate(5px, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.gif5 {
+    height: 120px;
+    position: absolute;
+    animation: moverfantasma 2s infinite; 
+    top: 400px;
+}
+
+.gif6 {
+    height: 120px;
+    position: absolute;
+    animation: moverfantasma 2s infinite; 
+    top: 150px;
+    left: 300px;
+}
+
+.gif7 {
+    height: 120px;
+    position: absolute;
+    animation: moverfantasma 2s infinite; 
+    top: 10px;
+    right: 400px;
+}
+
+.gif8 {
+    height: 120px;
+    position: absolute;
+    animation: moverfantasma 2s infinite;
+    top: 200px;
+    right: 280px;
+
+}
+
+@keyframes iluminar {
+    0% {
+        opacity: 1;
+        filter: drop-shadow(0 0 50px #ffae00); /* Color de la "luz" */
+    }
+    50% {
+        opacity: 0.5;
+        filter: drop-shadow(0 0 50px #ffae00); /* Aumenta la "luz" */
+    }
+    100% {
+        opacity: 1;
+        filter: drop-shadow(0 0 50px #ffae00); /* Regresa a la normalidad */
+    }
+}
+
+.gif9 {
+    height: 150px;
+    width: auto;
+    position: absolute; 
+    top: 430px; 
+    left: 750px; 
+    transform: translateX(-50%); 
+    animation: iluminar 3s infinite; 
+}
+
+.gif10 {
+    height: 150px;
+    width: auto;
+    position: absolute; 
+    top: 350px; 
+    right: 700px; 
+    transform: translateX(-50%);
+    animation: iluminar 3s infinite; 
+}
+
+.gif11 {
+    height: 150px;
+    width: auto;
+    position: absolute;
+    top: -15px;
+    right: 550px;
+    transform: translateX(-50%);
+    animation: iluminar 3s infinite;
+}
+
+.final {
+    height: 280px;
+    position: absolute;
+    top: 350px;
+    left: -25px;
+}
+
+.final2 {
+    height: 280px;
+    position: absolute;
+    top: -65px;
+    right: -20px;
+}
+
+
+
+
