@@ -132,7 +132,7 @@
 
 /**animacion_navidad**/
 
-body{
+.navidad{
     margin: 0;
     padding: 0;
     display: flex;
